@@ -1,7 +1,5 @@
 /*  CSS Document  */
 
-git add lang.json
-
 @charset "UTF-8";
 
 /* Global Styles */
@@ -82,6 +80,14 @@ footer p {
     font-weight: bold;
 }
 
+.gallery_container .detail {display: inline-block; }
+.gallery_container .thumbnail { float: left; margin: 0px 10px 10px 0px; display: inline-block; }
+.gallery_container .thumbnail img { border: 2px solid rgba(0,0,0,0); }
+.gallery_container .thumbnail img.selected { border-color: #8e5b30; }
+.gallery_container .thumbnails .caption_text { display: none; } 
+
+
+
 /* ...................................... */
 /* Orientation-specific Layout - Landscape */
 .page.landscape  { width: 1024px; height: 748px; }
@@ -94,7 +100,22 @@ footer p {
 .page.landscape.home div.cupcake_01 { -webkit-transform: translate3d(254px,290px,0px); }
 .page.landscape.home div.cupcake_02 { -webkit-transform: translate3d(562px,304px,0px); }
 .page.landscape.home div.cupcake_03 { -webkit-transform: translate3d(711px,174px,0px); }
+/* contact us */
+.page.landscape .map_container.on { -webkit-transform: translate3d(630px,170px,0px); }
+.page.landscape .contact_us_content { width: 500px; }
 
+.page.landscape div.logo_gourmet { -webkit-transform: scale(.6) translate3d(-215px,-60px,0px); }
+.page.landscape div.logo_cupcakes { -webkit-transform: scale(.85) translate3d(390px,90px,0px); }
+
+/* gallery */
+.page.landscape .gallery_container { width: 920px; position: relative; }
+.page.landscape .gallery_container .detail { margin-right: 15px; padding-right: 10px; border-right: 2px solid #8e5b30; float: left; }
+.page.landscape .gallery_container .detail img { width: 510px; height: 340px; }
+.page.landscape .gallery_container .thumbnails { width: 380px; float: left; }
+.page.landscape .gallery_container .thumbnails .thumbnail img { width: 110px; height: 83px; }
+.page.landscape .gallery_container .thumbnails .caption { width: 385px; height: 50px; position: absolute; bottom: 5px; right: 0px; }
+
+.page.landscape .video_graphic { position: absolute; right: -25px; top: 170px; }
 
 /* ...................................... */
 /* Orientation-specific Layout - Portrait */
@@ -108,3 +129,30 @@ footer p {
 .page.portrait.home div.cupcake_01 { -webkit-transform: translate3d(90px,545px,0px); }
 .page.portrait.home div.cupcake_02 { -webkit-transform: translate3d(360px,457px,0px); }
 .page.portrait.home div.cupcake_03 { -webkit-transform: translate3d(535px,290px,0px); }
+/* contact us */
+.page.portrait .map_container.on { -webkit-transform: translate3d(385px,170px,0px); }
+.page.portrait .contact_us_content { width: 275px; }
+
+.page.portrait div.logo_gourmet { -webkit-transform: scale(.6) translate3d(-215px,-60px,0px); }
+.page.portrait div.logo_cupcakes { -webkit-transform: scale(.85) translate3d(390px,90px,0px); }
+
+/* gallery */
+.page.portrait .gallery_container { height: 630px; position: relative; }
+.page.portrait .gallery_container .detail { margin-bottom: 10px; padding-bottom: 10px; border-bottom: 2px solid #8e5b30; }
+.page.portrait .gallery_container .detail img { width: 640px; height: 427px; }
+.page.portrait .gallery_container .thumbnails { margin-top: 65px; }
+.page.portrait .gallery_container .thumbnails .thumbnail img { width: 95px; height: 72px; }
+.page.portrait .gallery_container .thumbnails .caption { height: 50px; position: absolute; top: 450px; left: 0px; }
+
+.page.portrait .video_graphic { position: absolute; right: -65px; top: 415px; }
+
+@media only screen and (-webkit-min-device-picel-ratio: 2){
+
+    div.logo_gourmet { background-image: url(../images/logo_gourmet_2x.png); }
+    div.logo_cupcakes { background-image: url(../images/logo_cupcakes_2x.png); }
+    div.cupcake_01 { background-image: url(../images/cupcake_01_2x.png); }
+    div.cupcake_02 { background-image: url(../images/cupcake_02_2x.png); }
+    div.cupcake_03 { background-image: url(../images/cupcake_03_2x.png); }
+    nav a { background-image: url(../images/nav_icons_2x.png); background-size: 28px 140px; }
+
+}
