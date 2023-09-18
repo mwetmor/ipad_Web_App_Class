@@ -1,0 +1,14 @@
+{
+  "name": "myWebApp",
+  "description": "WebApp for Ipad for Class",
+  "version": "0.0.1",
+  "repository": "https://github.com/mwetmor/iPad_Web_App_Class/myWebApp",
+  "main": "index.html",
+  "links": type="text/css" rel="stylesheet" href="assets/includes/sales_aid.css"
+  "scripts": {
+    "jquery": type="text/javascript" src="assets/includes/jquery-1.11.1.min.js",
+    "iscroll": type="text/javascript" src="assets/includes/iscroll.js",
+    "maps": type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.3&sensor=false",
+    "sales_aid": type="text/javascript" src="assets/includes/sales_aid.js?v=1"
+  },
+}
