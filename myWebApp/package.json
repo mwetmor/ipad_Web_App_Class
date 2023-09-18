@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "repository": "https://github.com/mwetmor/iPad_Web_App_Class/myWebApp",
   "main": "index.html",
-  "links": "assets/includes/sales_aid.css"
+  "links": "assets/includes/sales_aid.css",
   "scripts": {
     "jquery": "assets/includes/jquery-1.11.1.min.js",
     "iscroll": "assets/includes/iscroll.js",
