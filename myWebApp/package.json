@@ -1,4 +1,4 @@
-{
+
   "name": "myWebApp",
   "description": "WebApp for Ipad for Class",
   "version": "0.0.1",
@@ -10,5 +10,4 @@
     "iscroll": "assets/includes/iscroll.js",
     "maps": "http://maps.google.com/maps/api/js?v=3.3&sensor=false",
     "sales_aid": "assets/includes/sales_aid.js?v=1"
-  },
-}
+  }
